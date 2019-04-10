@@ -1,0 +1,77 @@
+#holder {
+    width:294px;
+    height:120px;
+    margin-left: 32px;
+    border: 5px dashed #ccc;
+    margin-top: 15px;
+}
+#holder.hover {
+    border: 5px dashed #6ADBA5 !important;
+}
+#fileDragName{
+    margin-left: 3px;
+   
+    border: 1px solid white;
+}
+
+#holder[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: rgb(197, 48, 48);
+}
+
+#holder[placeholder]:empty:hover:before {
+    content: "";
+}
+.style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #bcc4d9;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.style-1::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+}
+
+.style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #92a2c3;
+    background-color: #d6d7da;
+}
+
+.scrollbar {
+    overflow-y: auto;
+    height: 121px;
+}
+.yazi {
+    font-family: sinkinSans500Medium;
+    color: #0072a3;
+    font-size: 16px;
+    margin-top: 11%;
+    text-align: center;
+}
+.turuncu-renk{
+    color: #fe7e75;
+}
+    
+
+
+:host ::ng-deep {
+.ui-progressbar.ui-progressbar-determinate .ui-progressbar-value{
+
+    background: #6ADBA5;
+}
+}
+
+.input-div-image{
+
+    input[type=file] {
+        display: none;
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        line-height: 900%;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

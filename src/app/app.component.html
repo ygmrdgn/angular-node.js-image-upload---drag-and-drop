@@ -1,0 +1,33 @@
+<br> <br> <br> <br>
+  
+<div method="post" >
+        <div  (click)="dosyaYukle()" id="holder">
+            <div class="scrollbar style-1">
+            
+                    <div id="fileDragName"  class="input-div-image">
+                        
+                             <input  (change)="resimGonder()" accept="image/*" name="upfile" type="file" required="required" multiple="multiple" id="files" />
+                            <h3 *ngIf="listeDurumu"  class="yazi"> Sürükle Bırak veya <h3 class="turuncu-renk"> Dosya Seç </h3>
+                        
+                        </h3>
+                        <li  style=" list-style-type:none;" *ngFor="let listeleme of deneme">
+                                <div>
+
+                           <div style="float:left; margin-right: 10px">
+                                  {{listeleme.name}}
+                            </div>
+                            <a style="color: #6ADBA5;   text-decoration: none;" href="#" (click)="resmiSil(listeleme)"> Sil </a> 
+                                </div>
+                           
+                        
+                            <div style="width:70%; ">
+                                    <p-progressBar  [value]="progress.percentage"></p-progressBar>
+                            </div>
+                                                 
+                    </li>
+                       
+                    </div>
+            </div>
+        </div>
+        <button style="display:none" (click)="resimGonder()" id="sahteButton"></button>
+    </div>
